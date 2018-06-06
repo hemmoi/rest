@@ -7,7 +7,9 @@ import {
 const initialState = {
     data: {
         reducer: "get"
-    }
+    },
+    isFetching: false,
+    error: ""
 }
 
 const getReducer = (state = initialState, action) => {

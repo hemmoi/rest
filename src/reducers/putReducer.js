@@ -7,7 +7,9 @@ import {
 const initialState = {
     data: {
         reducer: "put"
-    }
+    },
+    isFetching: false,
+    error: ""
 }
 
 const putReducer = (state = initialState, action) => {

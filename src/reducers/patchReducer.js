@@ -7,7 +7,9 @@ import {
 const initialState = {
     data: {
         reducer: "patch"
-    }
+    },
+    isFetching: false,
+    error: ""
 }
 
 const patchReducer = (state = initialState, action) => {

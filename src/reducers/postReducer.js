@@ -7,7 +7,9 @@ import {
 const initialState = {
     data: {
         reducer: "post"
-    }
+    },
+    isFetching: false,
+    error: ""
 }
 
 const postReducer = (state = initialState, action) => {
