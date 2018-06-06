@@ -1,5 +1,3 @@
-import {PUT_DATA} from '../actions/putAction'
-
 const initialState = {
     data: {
         reducer: "put"
@@ -8,7 +6,7 @@ const initialState = {
 
 const putReducer = (state = initialState, action) => {
     switch (action.type) {
-        case PUT_DATA:
+        case "PUT_SUCCESS":
             return Object.assign({}, state, {data: action.payload});
         default:
             return state

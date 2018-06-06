@@ -1,13 +1,17 @@
-import {CALL_API, HTTP_GET} from '../middleware/api';
-
-export const GET_DATA = 'GET_DATA';
-export const GET_SUCCESS = 'GET_SUCCESS';
-export const GET_FAIL = 'GET_FAIL';
+import { RSAA } from 'redux-api-middleware'; 
 
 export const getData = () => ({
-    [CALL_API]: {
-        endpoint: `post`,
-        types:[GET_DATA, GET_SUCCESS, GET_FAIL],
-        method: HTTP_GET
+    [RSAA]: {
+        endpoint: `https://jsonplaceholder.typicode.com/posts`,
+        method: 'GET',
+        types: ['GET_REQUEST', 'GET_SUCCESS', 'GET_FAILURE']
+    }
+});
+
+export const getDataFail = () => ({
+    [RSAA]: {
+        endpoint: `https://jsonplaceholder.typicode.com/foo`,
+        method: 'GET',
+        types: ['GET_REQUEST', 'GET_SUCCESS', 'GET_FAILURE']
     }
 });

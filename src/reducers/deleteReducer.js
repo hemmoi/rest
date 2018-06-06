@@ -1,5 +1,3 @@
-import {DELETE_DATA} from '../actions/deleteAction';
-
 const initialState = {
     data: {
         reducer: "delete"
@@ -8,7 +6,7 @@ const initialState = {
 
 const deleteReducer = (state = initialState, action) => {
     switch (action.type) {
-        case DELETE_DATA:
+        case "DELETE_DATA":
             return Object.assign({}, state, {data: action.payload});
         default:
             return state

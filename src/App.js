@@ -1,11 +1,11 @@
 import React, {Component} from 'react';
 import {BrowserRouter as Router, Route, Link} from "react-router-dom";
 import './App.css';
-import Get from './components/Get';
-import Put from './components/Put';
-import Post from './components/Post';
-import Patch from './components/Patch';
-import Delete from './components/Delete';
+import Get from './containers/Get';
+import Put from './containers/Put';
+import Post from './containers/Post';
+import Patch from './containers/Patch';
+import Delete from './containers/Delete';
 
 class App extends Component {
   render() {

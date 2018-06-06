@@ -1,10 +1,11 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
-import {getData} from '../actions/getAction';
+import {getData, getDataFail} from '../actions/getAction';
 
 class Get extends Component {
     componentWillMount() {
-        console.log(this.props.getData());
+        this.props.getData();
+        this.props.getDataFail();
     }
     render() {
         return (
@@ -18,4 +19,4 @@ const mapStateToProps = (state) => {
     return {data}
 }
 
-export default connect(mapStateToProps, {getData})(Get);
+export default connect(mapStateToProps, { getData, getDataFail })(Get);
