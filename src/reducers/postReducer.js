@@ -5,9 +5,7 @@ import {
 } from '../actions/postAction';
 
 const initialState = {
-    data: {
-        reducer: "post"
-    },
+    data: {},
     isFetching: false,
     error: ""
 }

@@ -5,9 +5,7 @@ import {
 } from '../actions/putAction';
 
 const initialState = {
-    data: {
-        reducer: "put"
-    },
+    data: {},
     isFetching: false,
     error: ""
 }

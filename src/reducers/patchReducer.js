@@ -5,9 +5,7 @@ import {
 } from '../actions/patchAction';
 
 const initialState = {
-    data: {
-        reducer: "patch"
-    },
+    data: {},
     isFetching: false,
     error: ""
 }

@@ -5,9 +5,7 @@ import {
 } from '../actions/deleteAction';
 
 const initialState = {
-    data: {
-        reducer: "delete"
-    },
+    data: {},
     isFetching: false,
     error: ""
 }
