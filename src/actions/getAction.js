@@ -1,21 +1,20 @@
-import { RSAA } from 'redux-api-middleware';
-import {API_URL} from '../helpers/hostConfiguration';
+import { CALL_API } from '../middleware/restApi';
 export const GET_REQUEST = "GET_REQUEST";
 export const GET_SUCCESS = "GET_SUCCESS";
 export const GET_FAILURE = "GET_FAILURE"; 
 
 export const getData = () => ({
-    [RSAA]: {
-        endpoint: API_URL + "posts",
-        method: 'GET',
+    [CALL_API]: {
+        endpoint: "posts",
+        method: 'get',
         types: [GET_REQUEST, GET_SUCCESS, GET_FAILURE]
     }
 });
 
 export const getDataFail = () => ({
-    [RSAA]: {
-        endpoint: API_URL + "foo",
-        method: 'GET',
+    [CALL_API]: {
+        endpoint: "foo",
+        method: 'get',
         types: [GET_REQUEST, GET_SUCCESS, GET_FAILURE]
     }
 });

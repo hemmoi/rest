@@ -5,4 +5,4 @@ function readHostConfiguration() {
     // }
     return 'https://jsonplaceholder.typicode.com/';
   }
-  export const API_URL = readHostConfiguration();
+  export const API_ROOT = readHostConfiguration();
