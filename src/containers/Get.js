@@ -9,7 +9,7 @@ class Get extends Component {
     }
     render() {
         return (
-            <div>Get component</div>
+            <div>Get component page</div>
         )
     }
 }
